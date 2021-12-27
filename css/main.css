@@ -1,0 +1,780 @@
+@font-face {
+    src: url("../fonts/CastellarMTStd.ttf");
+    font-family: Castellar;
+}
+
+@font-face {
+    src: url("../fonts/Lora-Regular.ttf");
+    font-family: Lora-Regular;
+}
+
+@font-face {
+    src: url("../fonts/MullerBold.ttf");
+    font-family: MullerBold;
+}
+
+@font-face {
+    src: url("../fonts/MullerRegular.ttf");
+    font-family: MullerRegular;
+}
+
+@font-face {
+    src: url("../fonts/Lora-Bold.ttf");
+    font-family: Lora-Bold;
+}
+
+body {
+    margin: 0;
+    background: url("../images/bg-fone.png"), url("../images/bg-fone-metal.png"), url("../images/bg-fone-3.png"), center;
+    opacity: 0.8;
+}
+
+#header {
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto 0 auto;
+    align-items: center;
+}
+
+.logo {
+    max-width: 135px;
+}
+
+.logo span {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Lora-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#header #menu {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header #menu .menu-item {
+    font-size: 16px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+#header #menu .menu-item.active {
+    border-bottom: 1px solid rgb(174, 137, 89);
+}
+
+#header #menu a:hover {
+    cursor: pointer;
+    border-bottom: 1px solid rgb(174, 137, 89);
+}
+
+#header #phone span {
+    font-size: 15px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    margin-left: 15px;
+}
+
+#header #phone img {
+    vertical-align: middle;
+}
+
+#main {
+    margin: 0 auto;
+    max-width: 1085px;
+    display: flex;
+    position: relative;
+}
+
+#main #main-info .main-name {
+    font-size: 180px;
+    font-family: "Castellar", sans-serif;
+    color: rgba(174, 137, 89, 0.051);
+}
+
+#main #main-info .main-name:first-child {
+    position: absolute;
+    top: 25px;
+    right: -40px;
+}
+
+#main #main-info .main-name:last-child {
+    position: absolute;
+    bottom: -200px;
+    left: -10px;
+}
+
+#main #main-info #main-title {
+    margin: 200px 0 0 30px;
+    font-size: 40px;
+    font-family: "Lora-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+    max-width: 510px;
+}
+
+#main #main-info #main-title h1 {
+    margin: 0;
+}
+
+#main #main-info #main-text {
+    max-width: 510px;
+    font-size: 22px;
+    font-family: "Lora-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 40px 0 0 30px;
+}
+
+.btn {
+    font-size: 18px;
+    font-family: "MullerBold", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 24px 30px;
+    background-color: rgb(174, 137, 89);
+    border: 1px solid transparent;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 18.75px 6.25px rgba(152, 108, 52, 1);
+}
+
+#main #main-info .btn {
+    margin: 50px 0 50px 30px;
+}
+
+#main #main-image img {
+    position: absolute;
+    top: 18px;
+    right: -40px;
+    max-width: 550px;
+}
+
+#advantages {
+    margin: 155px auto 0 auto;
+    background-color: rgb(19, 19, 24);
+}
+
+#advantages #advantages-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+}
+
+#advantages #advantages-container .advantage-title img {
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+#advantages #advantages-container .advantage-title {
+    font-size: 18px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#about {
+    margin: 100px auto;
+    max-width: 1170px;
+    border-right: 1px solid rgb(174, 137, 89);
+}
+
+.second-title {
+    font-size: 32px;
+    font-family: "Lora-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.156;
+    text-align: center;
+    margin: 0;
+}
+
+#about .second-title {
+    max-width: 581px;
+    margin: 0 auto 60px auto;
+    transition-duration: 0.5s;
+}
+
+#about .second-title:hover {
+    transform: scale(1.1);
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+}
+
+#about #about-main {
+    display: flex;
+    position: relative;
+}
+
+#about #about-main #about-image {
+    margin-right: 68px;
+    margin-bottom: 80px;
+    max-width: 600px;
+    max-height: 419px;
+    transition-duration: 1s;
+}
+
+#about #about-main #about-image:hover {
+    transform: scale(1.1);
+    transition-timing-function: ease;
+    transition-duration: 1s;
+}
+
+#about #about-main #about-text {
+    max-width: 470px;
+}
+
+#about #about-main .about-text-words:hover {
+    transform: scale(1.1);
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+}
+
+#about #about-main #about-text .about-text-words {
+    font-size: 16px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.313;
+    margin-bottom: 35px;
+    transition-duration: 0.5s;
+}
+
+#about #about-main #about-text #about-image-second img {
+    position: absolute;
+    right: 193px;
+    bottom: -165px;
+}
+
+#about #about-advantages .about-charm {
+    margin-bottom: 25px;
+    transition-duration: 0.5s;
+}
+
+#about #about-advantages .about-charm:hover {
+    transform: scale(1.1);
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+}
+
+#about #about-advantages .about-charm span {
+    font-size: 18px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    margin-left: 25px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+#about #about-advantages .about-charm img {
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+}
+
+#instagram {
+    margin: 0 auto;
+    background: url("../images/instagram1.png"), url("../images/instagram2.png"), center;
+}
+
+#instagram #instagram-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+}
+
+#instagram #instagram-container #instagram-text {
+    margin-left: 80px;
+    font-size: 28px;
+    font-family: "Lora-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    max-width: 423px;
+}
+
+#instagram #instagram-container #instagram-text span {
+    font-family: "Lora-Bold", sans-serif;
+}
+
+#instagram #instagram-container .btn {
+    margin-right: 180px;
+    padding: 24px 60px;
+}
+
+#price {
+    margin: 100px auto;
+    max-width: 1170px;
+    border-left: 1px solid rgb(174, 137, 89);
+}
+
+#price #price-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    position: relative;
+}
+
+#price #price-image {
+    position: absolute;
+    top: 5px;
+    right: 210px;
+}
+
+#price #main-price {
+    width: 365px;
+    margin-left: 84px;
+}
+
+#price .second-title {
+    margin-bottom: 60px;
+}
+
+.price-title {
+    font-size: 25px;
+    font-family: "Lora-Regular", sans-serif;
+    color: rgb(174, 137, 89);
+    margin-bottom: 40px;
+}
+
+#price .price-main-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+#price #price-container #main-price .price-main-text:last-child {
+    margin-bottom: 0;
+}
+
+.price-main-text .price-main-text-service {
+    max-width: 231px;
+}
+
+.cut {
+    font-size: 18px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.cut-extra {
+    margin-bottom: 10px;
+}
+
+.cut-second {
+    margin-bottom: 13px;
+}
+
+.price-main-text-service span {
+    font-size: 14px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(89, 85, 80);
+}
+
+.cost {
+    font-size: 18px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#extra {
+    width: 370px;
+    margin-right: 35px;
+}
+
+#extra .price-main-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+#extra .price-main-text:last-child {
+    margin-bottom: 0;
+}
+
+.extra-title {
+    margin-bottom: 50px;
+}
+
+#first {
+    margin: 0 auto;
+    background: url("../images/first2.png"), url("../images/first1.png"), center;
+}
+
+#first #first-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+}
+
+#first #first-container #first-text {
+    margin-left: 80px;
+    font-size: 28px;
+    font-family: "Lora-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+    max-width: 298px;
+}
+
+#first #first-container #get-discount {
+    margin-left: 80px;
+    font-size: 28px;
+    font-family: "Lora-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+    max-width: 1090px;
+    text-align: center;
+    display: none;
+}
+
+#first #first-container #first-text span {
+    font-family: "Lora-Bold", sans-serif;
+    color: #ae8959;
+}
+
+#first #first-container .btn {
+    margin-right: 180px;
+    padding: 24px 60px;
+}
+
+#masters {
+    margin: 100px auto;
+    max-width: 1170px;
+    border-right: 1px solid rgb(174, 137, 89);
+}
+
+#masters .second-title {
+    margin-bottom: 60px;
+}
+
+#masters #masters-text {
+    font-size: 18px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    width: 796px;
+    text-align: center;
+    margin: 0 auto 40px auto;
+    line-height: 1.389;
+}
+
+#masters-category {
+    width: 85%;
+    height: 80%;
+    margin: 80px auto 0 auto;
+}
+
+#masters-category .barber-image {
+    width: 295px;
+    text-align: center;
+    position: relative;
+    margin: 0 20px;
+    max-width: 100%;
+}
+
+#masters-category .barber-image:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+#masters-category .write {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    width: 292px;
+    max-width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#masters-category .write .btn {
+    font-size: 16px;
+    font-family: "MullerBold", sans-serif;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    padding: 15px 39px;
+    border: 1px solid rgb(174, 137, 89);
+    margin-bottom: 20px;
+}
+
+#masters-category .write .btn:hover {
+    cursor: pointer;
+    background: rgb(174, 137, 89);
+}
+
+#masters-category .write .category-name {
+    font-size: 20px;
+    font-family: "Lora-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.slick-initialized .slick-slide {
+    padding: 40px 0;
+    transition-duration: 1.3s;
+}
+
+.slick-slide {
+    filter: grayscale(100%);
+}
+
+.slick-slide:hover {
+    filter: grayscale(0);
+}
+
+.slick-center {
+    transform: scale(1.2);
+    filter: grayscale(0);
+    transition-timing-function: ease;
+    transition-duration: 1.3s;
+}
+
+#masters-category .slick-prev:before {
+    content: url("../images/prev.png");
+    font-size: 35px;
+}
+
+#masters-category .slick-next:before {
+    content: url("../images/next.png");
+    font-size: 35px;
+}
+
+#masters-category .slick-next, .slick-prev {
+    top: 535px;
+}
+
+#masters-category .slick-prev {
+    left: 287px;
+}
+
+#masters-category .slick-next {
+    right: 285px;
+}
+
+#masters-category .slick-dots {
+    position: initial;
+    margin-top: 40px;
+}
+
+#masters-category .slick-dots li {
+    margin: 0 10px;
+    padding: 0;
+    cursor: pointer;
+}
+
+#masters-category .slick-dots li button {
+    border-width: 1px;
+    border-color: rgb(174, 137, 89);
+    border-style: solid;
+    width: 23px;
+    height: 23px;
+    padding: 0;
+}
+
+#masters-category .slick-dots li button:before {
+    top: 6px;
+    left: 6px;
+    width: 17px;
+    height: 17px;
+    content: '';
+    opacity: 0;
+    background: rgb(174, 137, 89);
+}
+
+#masters-category .slick-dots li.slick-active button:before {
+    opacity: 1;
+}
+
+#masters-category .slick-dots li.slick-active button {
+    width: 28px;
+    height: 28px;
+}
+
+#place {
+    background: url("../images/bg-fone.png");
+    margin: 0;
+}
+
+#place-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0 90px 0;
+}
+
+#place-container #place-info{
+    margin-right: 60px;
+}
+
+#place-container #place-info .logo {
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+
+#place-container #place-info .place-text, .number {
+    font-size: 16px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#place-container #place-info .place-text {
+    max-width: 196px;
+}
+
+#place-container #place-info .place-icons {
+    padding: 10px 0;
+    max-width: 200px;
+}
+
+#place-container #place-info #place-image {
+    margin-bottom: 50px;
+    text-align: center;
+    margin-left: 45px;
+}
+
+#place-container #place-info #place-image a {
+    margin: 0 12px;
+}
+
+#place-container #place-info #place-image a:hover {
+    opacity: 0.9;
+}
+
+#place-container #map {
+    width: 862px;
+    height: 472px;
+}
+
+#place-container #map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#footer {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+
+#footer .footer-text {
+    font-size: 14px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(80, 79, 79);
+    line-height: 1.2;
+}
+
+#reservation-container {
+    margin: 0 auto;
+    max-width: 1005px;
+    background: url("../images/application.png"), url("../images/application2.png"), rgba(0, 0, 0, 0.60);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#reservation {
+    opacity: 0.851;
+    padding: 60px 98px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1005px;
+}
+
+#reservation #reservation-cancel {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#reservation h2.second-title {
+    font-size: 25px;
+    font-family: "Lora-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#reservation #reserve {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#reservation .option {
+    border: 1px solid rgb(174, 137, 89);
+    height: 43px;
+    width: 225px;
+    background: transparent;
+    color: white;
+    outline: 0;
+    padding: 0 0 0 16px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "MullerRegular", sans-serif;
+    text-align: left;
+    margin: 20px 0;
+}
+
+#reservation #reserve-button {
+    text-align: center;
+}
+
+::placeholder {
+    font-size: 16px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+#reservation #reservation-sent {
+    width: 790px;
+    display: none;
+}
+
+#reservation #reservation-sent h2.second-title {
+    font-size: 25px;
+    font-family: "Lora-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#reservation #reservation-sent #reservation-sent-text .second-title {
+    font-size: 18px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 362px;
+    margin: 80px auto 185px auto;
+    line-height: 1.389;
+}
+
+#reservation .reserve-error {
+    position: absolute;
+    color: red;
+    font-size: 15px;
+    text-align: center;
+    display: none;
+}
+
+#burger {
+    display: none;
+    color: white;
+    font-size: 32px;
+    line-height: 30px;
+}
