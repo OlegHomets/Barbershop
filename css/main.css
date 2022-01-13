@@ -52,6 +52,11 @@ body {
     width: 350px;
     display: flex;
     justify-content: space-between;
+    margin-right: 30px;
+}
+
+#menu #close{
+    display: none;
 }
 
 #header #menu .menu-item {
@@ -60,11 +65,9 @@ body {
     color: rgb(255, 255, 255);
     text-decoration: none;
     border: 1px solid transparent;
+    height: 20px;
 }
 
-#header #menu .menu-item.active {
-    border-bottom: 1px solid rgb(174, 137, 89);
-}
 
 #header #menu a:hover {
     cursor: pointer;
@@ -75,11 +78,18 @@ body {
     font-size: 15px;
     font-family: "MullerRegular", sans-serif;
     color: rgb(255, 255, 255);
-    margin-left: 15px;
+    margin-left: 10px;
+}
+
+#header #phone a{
+    text-decoration: none;
 }
 
 #header #phone img {
     vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
 }
 
 #main {
@@ -88,6 +98,7 @@ body {
     display: flex;
     position: relative;
 }
+
 
 #main #main-info .main-name {
     font-size: 180px;
@@ -103,12 +114,12 @@ body {
 
 #main #main-info .main-name:last-child {
     position: absolute;
-    bottom: -200px;
-    left: -10px;
+    bottom: -190px;
+    left: 30px;
 }
 
 #main #main-info #main-title {
-    margin: 200px 0 0 30px;
+    margin: 200px 0 0 70px;
     font-size: 40px;
     font-family: "Lora-Regular", sans-serif;
     color: rgb(255, 255, 255);
@@ -124,7 +135,7 @@ body {
     font-size: 22px;
     font-family: "Lora-Regular", sans-serif;
     color: rgb(255, 255, 255);
-    margin: 40px 0 0 30px;
+    margin: 40px 0 0 70px;
 }
 
 .btn {
@@ -132,7 +143,7 @@ body {
     font-family: "MullerBold", sans-serif;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 24px 30px;
+    padding: 20px 33px;
     background-color: rgb(174, 137, 89);
     border: 1px solid transparent;
 }
@@ -143,7 +154,7 @@ body {
 }
 
 #main #main-info .btn {
-    margin: 50px 0 50px 30px;
+    margin: 50px 0 50px 70px;
 }
 
 #main #main-image img {
@@ -188,14 +199,13 @@ body {
     font-size: 32px;
     font-family: "Lora-Regular", sans-serif;
     color: rgb(255, 255, 255);
-    line-height: 1.156;
     text-align: center;
     margin: 0;
 }
 
 #about .second-title {
     max-width: 581px;
-    margin: 0 auto 60px auto;
+    margin: 0 auto 55px 250px;
     transition-duration: 0.5s;
 }
 
@@ -214,7 +224,6 @@ body {
     margin-right: 68px;
     margin-bottom: 80px;
     max-width: 600px;
-    max-height: 419px;
     transition-duration: 1s;
 }
 
@@ -271,8 +280,8 @@ body {
 
 #about #about-advantages .about-charm img {
     vertical-align: middle;
-    width: 25px;
-    height: 25px;
+    /*width: 25px;*/
+    /*height: 25px;*/
 }
 
 #instagram {
@@ -303,8 +312,8 @@ body {
 }
 
 #instagram #instagram-container .btn {
-    margin-right: 180px;
-    padding: 24px 60px;
+    margin-right: 175px;
+    padding: 20px 60px;
 }
 
 #price {
@@ -324,6 +333,7 @@ body {
     position: absolute;
     top: 5px;
     right: 210px;
+    z-index: -1;
 }
 
 #price #main-price {
@@ -340,12 +350,13 @@ body {
     font-family: "Lora-Regular", sans-serif;
     color: rgb(174, 137, 89);
     margin-bottom: 40px;
+    line-height: 1.5;
 }
 
 #price .price-main-text {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 47px;
 }
 
 #price #price-container #main-price .price-main-text:last-child {
@@ -360,6 +371,7 @@ body {
     font-size: 18px;
     font-family: "MullerRegular", sans-serif;
     color: rgb(255, 255, 255);
+    line-height: 0.5;
 }
 
 .cut-extra {
@@ -380,6 +392,7 @@ body {
     font-size: 18px;
     font-family: "MullerRegular", sans-serif;
     color: rgb(255, 255, 255);
+    line-height: 0;
 }
 
 #extra {
@@ -390,6 +403,7 @@ body {
 #extra .price-main-text {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 45px;
 }
 
 #extra .price-main-text:last-child {
@@ -411,7 +425,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 180px;
+    height: 175px;
 }
 
 #first #first-container #first-text {
@@ -438,8 +452,8 @@ body {
 }
 
 #first #first-container .btn {
-    margin-right: 180px;
-    padding: 24px 60px;
+    margin-right: 175px;
+    padding: 20px 40px;
 }
 
 #masters {
@@ -534,6 +548,10 @@ body {
     transition-duration: 1.3s;
 }
 
+.slick-center img{
+    max-width: 100%;
+}
+
 #masters-category .slick-prev:before {
     content: url("../images/prev.png");
     font-size: 35px;
@@ -577,10 +595,10 @@ body {
 }
 
 #masters-category .slick-dots li button:before {
-    top: 6px;
-    left: 6px;
-    width: 17px;
-    height: 17px;
+    top: 8px;
+    left: 8px;
+    width: 15px;
+    height: 15px;
     content: '';
     opacity: 0;
     background: rgb(174, 137, 89);
@@ -591,67 +609,92 @@ body {
 }
 
 #masters-category .slick-dots li.slick-active button {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
 }
 
 #place {
-    background: url("../images/bg-fone.png");
+    background: url("../images/bg-fone2.png");
     margin: 0;
 }
 
 #place-container {
     max-width: 1170px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 40px 40px 0 25px 0 15px;
+    grid-row-gap: 40px;
     padding: 60px 0 90px 0;
+    justify-items: center;
 }
 
-#place-container #place-info{
-    margin-right: 60px;
+#place-container .logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
-#place-container #place-info .logo {
-    margin-bottom: 50px;
-    margin-left: 30px;
+#place-container .place-text-time{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
 }
 
-#place-container #place-info .place-text, .number {
+#place-container .place-text{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    max-width: 195px;
+}
+
+#place-container .place-text-social{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+#place-container #place-image{
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    text-align: center;
+}
+
+#place-container .place-icons-mail{
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+}
+
+#place-container .place-icons-phone{
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+    text-decoration: none;
+}
+
+#place-container .place-icons-phone a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+
+#place-container .number {
     font-size: 16px;
     font-family: "MullerRegular", sans-serif;
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: center;
-    padding: 20px 0;
 }
 
-#place-container #place-info .place-text {
-    max-width: 196px;
-}
-
-#place-container #place-info .place-icons {
-    padding: 10px 0;
-    max-width: 200px;
-}
-
-#place-container #place-info #place-image {
-    margin-bottom: 50px;
-    text-align: center;
-    margin-left: 45px;
-}
-
-#place-container #place-info #place-image a {
+#place-container #place-image a {
     margin: 0 12px;
 }
 
-#place-container #place-info #place-image a:hover {
+#place-container #place-image a:hover {
     opacity: 0.9;
 }
 
 #place-container #map {
     width: 862px;
-    height: 472px;
+    grid-column: 2 /3;
+    grid-row: 1 / 8;
 }
 
 #place-container #map iframe {
@@ -675,21 +718,28 @@ body {
 }
 
 #reservation-container {
-    margin: 0 auto;
-    max-width: 1005px;
-    background: url("../images/application.png"), url("../images/application2.png"), rgba(0, 0, 0, 0.60);
-    background-size: cover;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 11111;
     justify-content: center;
     align-items: center;
-    display: none;
 }
 
 #reservation {
     opacity: 0.851;
-    padding: 60px 98px;
+    padding: 60px 30px;
     position: relative;
     margin: 0 auto;
-    max-width: 1005px;
+    width: 850px;
+    background-color: transparent;
+    border: 1px solid rgba(174, 137, 89, 0.5);
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
 #reservation #reservation-cancel {
@@ -723,7 +773,7 @@ body {
     background: transparent;
     color: white;
     outline: 0;
-    padding: 0 0 0 16px;
+    padding: 0 15px;
     box-sizing: border-box;
     font-size: 16px;
     font-family: "MullerRegular", sans-serif;
@@ -743,8 +793,9 @@ body {
 }
 
 #reservation #reservation-sent {
-    width: 790px;
+    max-width: 790px;
     display: none;
+    margin: 80px 0;
 }
 
 #reservation #reservation-sent h2.second-title {
@@ -760,7 +811,7 @@ body {
     color: rgb(255, 255, 255);
     text-align: center;
     width: 362px;
-    margin: 80px auto 185px auto;
+    margin: 80px auto 0 auto;
     line-height: 1.389;
 }
 
@@ -777,4 +828,36 @@ body {
     color: white;
     font-size: 32px;
     line-height: 30px;
+}
+
+.select {
+    appearance: none;
+}
+
+.choice-haircut{
+    position: relative;
+}
+
+.choice-haircut::after{
+    content: url("../images/down.png");
+    top: 30px;
+    right: 15px;
+    position: absolute;
+    z-index: -1;
+}
+
+.choice-barber{
+    position: relative;
+}
+
+.choice-barber::after{
+    content: url("../images/down.png");
+    top: 30px;
+    right: 15px;
+    position: absolute;
+    z-index: -1;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(2);
 }

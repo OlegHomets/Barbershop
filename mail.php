@@ -2,13 +2,13 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $name = $_POST['name'];
-    $choice = $_POST['choice'];
+    $haircut = $_POST['haircut'];
     $data = $_POST['data'];
     $number = $_POST['number'];
-    $choice1 = $_POST['choice1'];
-    $choice2 = $_POST['choice2'];
+    $barber = $_POST['barber'];
+    $time = $_POST['time'];
 
-    $content = $name . ' оставил заявку ' . $choice . ' на ' . $data . '. Его телефон: ' . $number . 'К мастеру' . $choice1 . 'в' . $choice2;
+    $content = $name . ' оставил заявку ' . $haircut . ' на ' . $data . '. Его телефон: ' . $number . 'К мастеру' . $barber . 'в' . $time;
 
 
     $success = mail("admin@barbershop.com", 'Запись на стрижку', $content);
