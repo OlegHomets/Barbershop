@@ -46,6 +46,12 @@
         bottom: -224px;
     }
 
+    #masters-category {
+        width: 100%;
+        height: 80%;
+        margin: 80px auto 0 auto;
+    }
+
     #place-container #map {
         max-width: 775px;
     }
@@ -156,6 +162,56 @@
 
     #first #first-container #first-text {
         margin-left: 30px;
+    }
+
+    #masters {
+        margin: 70px auto;
+    }
+
+    #masters #masters-text {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    #masters-category .write {
+        width: 215px;
+    }
+
+    .slick-dots li {
+        width: 13px;
+    }
+
+    #masters-category .slick-dots li button:before {
+        width: 16px;
+        height: 16px;
+    }
+
+    #masters-category .slick-next {
+        right: 180px;
+    }
+
+    #masters-category .slick-prev {
+        left: 192px;
+    }
+
+    #masters-category .slick-next, .slick-prev {
+        top: 427px;
+    }
+
+    #masters-category .barber-image {
+        width: 215px;
+    }
+
+    .slick-slide img {
+        max-width: 100%;
+    }
+
+    #masters-category .write .category-name {
+        font-size: 15px;
+    }
+
+    #masters-category .write .btn {
+        font-size: 12px;
     }
 
     #place-container {
@@ -353,6 +409,62 @@
 
     }
 
+    #masters {
+        margin: 50px auto;
+    }
+
+    #masters .second-title {
+        margin-bottom: 40px;
+    }
+
+    #masters-category {
+        width: 100%;
+        height: 80%;
+        margin: 40px auto 0 auto;
+    }
+
+    #masters-category .barber-image {
+        width: 150px;
+    }
+
+    #masters-category .write {
+        position: absolute;
+        bottom: 40px;
+        left: 20px;
+        width: 150px;
+        max-width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        text-align: center;
+    }
+
+    #masters-category .write .category-name {
+        font-size: 11px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    #masters-category .write .btn {
+        font-size: 12px;
+        padding: 10px 20px;
+        margin-left: 20px;
+    }
+
+    #masters-category .slick-dots {
+        margin-top: 20px;
+    }
+
+    #masters-category .slick-next, .slick-prev {
+        top: 318px;
+    }
+
+    #masters-category .slick-next {
+        right: 85px;
+    }
+
+    #masters-category .slick-prev {
+        left: 100px;
+    }
+
     #place-container{
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 20px;
@@ -506,6 +618,42 @@
         width: 450px;
     }
 
+    #masters {
+        margin: 30px auto;
+    }
+
+    #masters .second-title {
+        margin-bottom: 30px;
+    }
+
+    #masters #masters-text {
+        margin: 0 auto;
+    }
+
+    #masters-category .barber-image {
+        width: 125px;
+    }
+
+    #masters-category .write {
+        width: 125px;
+    }
+
+    #masters-category .write .btn {
+        margin-left: 10px;
+    }
+
+    #masters-category .slick-next, .slick-prev {
+        top: 283px;
+    }
+
+    #masters-category .slick-prev {
+        left: 54px;
+    }
+
+    #masters-category .slick-next {
+        right: 40px;
+    }
+
     #place-container #map {
         max-width: 440px;
         height: 300px;
@@ -551,6 +699,61 @@
         position: absolute;
         bottom: -128px;
         left: 0;
+    }
+
+    #masters-category .barber-image {
+        width: 90px;
+    }
+
+    #masters-category .write {
+        width: 90px;
+    }
+
+    #masters-category .write .category-name {
+        font-size: 9px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    #masters-category .write .btn {
+        font-size: 9px;
+        padding: 5px 11px;
+        margin-left: 5px;
+    }
+
+    #masters-category .write .btn {
+        margin-bottom: 10px;
+    }
+
+    #masters-category .slick-dots li.slick-active button {
+        width: 20px;
+        height: 20px;
+    }
+
+    #masters-category .slick-dots li button:before {
+        width: 8px;
+        height: 8px;
+    }
+
+    #masters-category .slick-dots li button {
+        width: 16px;
+        height: 16px;
+    }
+
+    #masters-category .slick-dots li {
+        margin: 0 7px;
+    }
+
+    #masters-category .slick-next, .slick-prev {
+        top: 235px;
+    }
+
+    #masters-category .slick-prev {
+        left: 20px;
+    }
+
+    #masters-category .slick-next {
+        right: 14px;
     }
 
     #price #price-image img {
@@ -620,6 +823,32 @@
         margin-right: 10px;
     }
 
+    #masters-category .barber-image {
+        margin: 0 10px;
+    }
+
+    #masters-category .barber-image {
+        width: 80px;
+    }
+
+    #masters-category .write {
+        position: absolute;
+        bottom: 40px;
+        left: 10px;
+    }
+
+    #masters-category .slick-next, .slick-prev {
+        top: 220px;
+    }
+
+    #masters-category .slick-prev {
+        left: 0;
+    }
+
+    #masters-category .slick-next {
+        right: 0;
+    }
+
     #place-container #map {
         max-width: 280px;
         height: 250px;
@@ -641,7 +870,7 @@
         max-width: 230px;
     }
 
-    #reservation .btn {
+    #reservation.btn {
         padding: 20px 30px;
     }
 }
