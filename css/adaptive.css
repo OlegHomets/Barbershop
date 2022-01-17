@@ -615,7 +615,7 @@
     #instagram #instagram-container {
         display: flex;
         flex-direction: column;
-        height: 180px;
+        height: 200px;
         padding: 25px 0;
         text-align: center;
     }
