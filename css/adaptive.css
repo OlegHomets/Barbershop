@@ -91,8 +91,8 @@
         display: flex;
         align-items: baseline;
         flex-direction: column;
-        height: 260px;
-        padding: 20px 20px;
+        height: 270px;
+        padding: 30px 20px;
     }
 
     #about #about-main .about-text-words:hover, #about #about-main .about-text-words:hover, #about #about-main #about-image:hover, #about .second-title:hover, #about #about-advantages .about-charm:hover {
@@ -263,14 +263,18 @@
         grid-row: 3 / 4;
     }
 
-    #reservation{
+    #reservation {
         margin: 0 20px;
+    }
+
+    #reservation #reserve {
+        margin: 0;
     }
 
 }
 
 @media screen and (max-width: 800px) {
-    #reservation{
+    #reservation {
         max-width: 735px;
     }
 
@@ -307,10 +311,11 @@
 
     #main #main-info .main-name {
         font-size: 120px;
+        color: rgba(174, 137, 89, 0.099);
     }
 
     #main #main-image img {
-        top: 250px;
+        top: 254px;
         right: 0;
         max-width: 260px;
     }
@@ -396,7 +401,7 @@
         height: 200px;
         display: flex;
         flex-direction: column;
-        padding: 20px 10px;
+        padding: 25px 10px;
     }
 
     #first #first-container #first-text {
@@ -465,7 +470,7 @@
         left: 100px;
     }
 
-    #place-container{
+    #place-container {
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 20px;
     }
@@ -543,6 +548,11 @@
         background: rgba(0, 0, 0, 0.7);
     }
 
+    #header #menu .menu-item {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
     #menu #close {
         display: flex;
         color: white;
@@ -575,7 +585,7 @@
     }
 
     #main #main-image img {
-        top: 279px;
+        top: 283px;
         right: 0;
         max-width: 204px;
     }
@@ -606,7 +616,7 @@
         display: flex;
         flex-direction: column;
         height: 180px;
-        padding: 20px 0;
+        padding: 25px 0;
         text-align: center;
     }
 
@@ -665,6 +675,10 @@
 
     #reservation .reserve-input {
         margin: 0 10px;
+    }
+
+    #reservation .option {
+        margin: 16px 0;
     }
 
 }
@@ -866,7 +880,7 @@
         max-width: 300px;
     }
 
-    #reservation h2.second-title{
+    #reservation h2.second-title {
         max-width: 230px;
     }
 
