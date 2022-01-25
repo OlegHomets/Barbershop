@@ -27,7 +27,7 @@
 
     #main #main-image img {
         position: absolute;
-        top: 85px;
+        top: 77px;
         right: 1px;
         max-width: 495px;
     }
@@ -68,9 +68,9 @@
 
     #main #main-image img {
         position: absolute;
-        top: 202px;
+        top: 214px;
         right: 1px;
-        max-width: 376px;
+        max-width: 360px;
     }
 
     #main #main-info #main-title {
@@ -81,9 +81,17 @@
         max-width: 414px;
     }
 
+    #main #main-info .btn {
+        margin: 50px 0 50px 30px;
+    }
+
     #main #main-info #main-text {
         font-size: 20px;
         margin: 40px 0 0 30px;
+    }
+
+    #main #main-info .main-name:last-child {
+        left: 20px;
     }
 
     #advantages #advantages-container {
@@ -315,9 +323,9 @@
     }
 
     #main #main-image img {
-        top: 254px;
+        top: 278px;
         right: 0;
-        max-width: 260px;
+        max-width: 240px;
     }
 
     #main #main-info .btn {
@@ -592,8 +600,8 @@
 
     #main #main-info .main-name:last-child {
         position: absolute;
-        bottom: -194px;
-        left: -10px;
+        bottom: -180px;
+        left: 16px;
     }
 
     #about {
@@ -679,8 +687,6 @@
 
     #reservation .option {
         margin: 16px 0;
-    }
-
 }
 
 /*480-499*/
@@ -704,16 +710,21 @@
     }
 
     #main #main-image img {
-        top: 245px;
+        top: 259px;
         right: 0;
         max-width: 150px;
     }
 
     #main #main-info .main-name:last-child {
         position: absolute;
-        bottom: -128px;
-        left: 0;
+        bottom: -122px;
+        left: 20px;
     }
+
+    #advantages{
+        margin: 110px auto 0 auto;
+    }
+}
 
     #masters-category .barber-image {
         width: 90px;
@@ -783,7 +794,8 @@
 
 @media screen and (max-width: 402px) {
     #main #main-image img {
-        top: 305px;
+        top: 350px;
+        max-width: 125px;
     }
 
     #instagram #instagram-container {
@@ -843,6 +855,11 @@
 
     #masters-category .barber-image {
         width: 80px;
+    }
+
+    .cost{
+        line-height: 1;
+        text-align: center;
     }
 
     #masters-category .write {
