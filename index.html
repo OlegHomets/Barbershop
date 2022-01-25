@@ -104,17 +104,17 @@
         </div>
     </div>
     <div id="about-advantages" class="wow animate__backInUp">
-        <div class="about-charm">
-            <img src="images/cup.png" alt="">
-            <span style="margin-left: 17px;">Мы предложим вам чашечку кофе или чая</span>
+        <div class="about-charm about-charm-adaptive">
+            <img class="cup-img" src="images/cup.png" alt="">
+            <span class="cup" style="margin-left: 17px;">Мы предложим вам чашечку кофе или чая</span>
         </div>
-        <div class="about-charm">
-            <img src="images/scissors.png" alt="" style="margin-left: 7px">
-            <span>Мы пострижем и побреем вас по всем европейским традициям</span>
+        <div class="about-charm about-charm-adaptive">
+            <img class="scissors-img" src="images/scissors.png" alt="" style="margin-left: 7px">
+            <span class="scissors">Мы пострижем и побреем вас по всем европейским традициям</span>
         </div>
-        <div class="about-charm">
-            <img src="images/interface.png" alt="" style="margin-left: 5px">
-            <span>И скоро вы снова захотите вернуться в наш барбершоп</span>
+        <div class="about-charm about-charm-adaptive">
+            <img class="interface-img" src="images/interface.png" alt="" style="margin-left: 5px">
+            <span class="interface">И скоро вы снова захотите вернуться в наш барбершоп</span>
         </div>
     </div>
 </div>
@@ -280,9 +280,7 @@
                 <img src="images/marat.png" alt="">
             </div>
             <div class="write" data-id="marat">
-                <div class="category-name">
-                    Марат
-                </div>
+                <div class="category-name">Марат</div>
                 <div class="category-button">
                     <button class="btn online">Записаться</button>
                 </div>
@@ -293,9 +291,7 @@
                 <img src="images/ekaterina.png" alt="">
             </div>
             <div class="write">
-                <div class="category-name">
-                    Екатерина
-                </div>
+                <div class="category-name">Екатерина</div>
                 <div class="category-button">
                     <button class="btn online">Записаться</button>
                 </div>
@@ -306,9 +302,7 @@
                 <img src="images/semen.png" alt="">
             </div>
             <div class="write">
-                <div class="category-name">
-                    Семён
-                </div>
+                <div class="category-name">Семён</div>
                 <div class="category-button">
                     <button class="btn online">Записаться</button>
                 </div>
@@ -319,9 +313,7 @@
                 <img src="images/andrey.png" alt="">
             </div>
             <div class="write">
-                <div class="category-name">
-                    Андрей
-                </div>
+                <div class="category-name">Андрей</div>
                 <div class="category-button">
                     <button class="btn online">Записаться</button>
                 </div>
@@ -332,9 +324,7 @@
                 <img src="images/artemii.png" alt="">
             </div>
             <div class="write">
-                <div class="category-name">
-                    Артемий
-                </div>
+                <div class="category-name">Артемий</div>
                 <div class="category-button">
                     <button class="btn online">Записаться</button>
                 </div>
@@ -345,9 +335,7 @@
                 <img src="images/gleb.png" alt="">
             </div>
             <div class="write">
-                <div class="category-name">
-                    Глеб
-                </div>
+                <div class="category-name">Глеб</div>
                 <div class="category-button">
                     <button class="btn online">Записаться</button>
                 </div>
@@ -358,9 +346,7 @@
                 <img src="images/ivan.png" alt="">
             </div>
             <div class="write">
-                <div class="category-name">
-                    Иван
-                </div>
+                <div class="category-name">Иван</div>
                 <div class="category-button">
                     <button class="btn online">Записаться</button>
                 </div>
@@ -371,9 +357,7 @@
                 <img src="images/oleg.png" alt="">
             </div>
             <div class="write">
-                <div class="category-name">
-                    Олег
-                </div>
+                <div class="category-name">Олег</div>
                 <div class="category-button">
                     <button class="btn online">Записаться</button>
                 </div>
@@ -384,9 +368,7 @@
                 <img src="images/alex.png" alt="">
             </div>
             <div class="write">
-                <div class="category-name">
-                    Алексей
-                </div>
+                <div class="category-name">Алексей</div>
                 <div class="category-button">
                     <button class="btn online">Записаться</button>
                 </div>
@@ -486,7 +468,7 @@
                 </div>
                 <div class="reserve-input choice-barber">
                     <div class="reserve-error">Выберите мастера</div>
-                        <select class="option barber select" name="barber">
+                        <select class="option barber select" name="barber" id="select-barber">
                             <option value="" disabled selected>Выберите мастера</option>
                             <option value="Глеб">Глеб</option>
                             <option value="Иван">Иван</option>

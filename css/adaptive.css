@@ -371,8 +371,45 @@
         margin-right: 0;
     }
 
-    #about #about-main #about-advantages {
+    #about #about-advantages {
         margin-top: 15px;
+    }
+    #about .about-charm-adaptive{
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+    }
+
+    #about #about-advantages .cup-img {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+    }
+
+    #about #about-advantages .cup {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        padding-left: 8px;
+    }
+
+    #about #about-advantages .scissors-img {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+    }
+
+    #about #about-advantages .scissors {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+
+    #about #about-advantages .interface-img {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+    }
+
+    #about #about-advantages .interface {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
     }
 
     #instagram #instagram-container #instagram-text {
@@ -623,8 +660,8 @@
     #instagram #instagram-container {
         display: flex;
         flex-direction: column;
-        height: 200px;
-        padding: 25px 0;
+        height: 250px;
+        padding: 40px 0;
         text-align: center;
     }
 
@@ -687,44 +724,44 @@
 
     #reservation .option {
         margin: 16px 0;
-}
-
-/*480-499*/
-@media screen and (max-width: 499px) {
-
-    #main #main-info .main-name {
-        font-size: 75px;
     }
 
-    #main #main-info #main-title {
-        margin: 100px 0 0 30px;
-    }
+    /*480-499*/
+    @media screen and (max-width: 499px) {
 
-    #main #main-info .btn {
-        margin: 30px 0 20px 30px;
-    }
+        #main #main-info .main-name {
+            font-size: 75px;
+        }
 
-    #main .btn {
-        margin-right: 180px;
-        padding: 20px 20px;
-    }
+        #main #main-info #main-title {
+            margin: 100px 0 0 30px;
+        }
 
-    #main #main-image img {
-        top: 259px;
-        right: 0;
-        max-width: 150px;
-    }
+        #main #main-info .btn {
+            margin: 30px 0 20px 30px;
+        }
 
-    #main #main-info .main-name:last-child {
-        position: absolute;
-        bottom: -122px;
-        left: 20px;
-    }
+        #main .btn {
+            margin-right: 180px;
+            padding: 20px 20px;
+        }
 
-    #advantages{
-        margin: 110px auto 0 auto;
+        #main #main-image img {
+            top: 259px;
+            right: 0;
+            max-width: 150px;
+        }
+
+        #main #main-info .main-name:last-child {
+            position: absolute;
+            bottom: -122px;
+            left: 20px;
+        }
+
+        #advantages {
+            margin: 110px auto 0 auto;
+        }
     }
-}
 
     #masters-category .barber-image {
         width: 90px;
@@ -788,7 +825,7 @@
 
 @media screen and (max-width: 410px) {
     #main #main-image img {
-        top: 283px;
+        top: 297px;
     }
 }
 
@@ -799,8 +836,8 @@
     }
 
     #instagram #instagram-container {
-        height: 250px;
-        padding: 20px 20px;
+        height: 260px;
+        padding: 30px 20px;
         text-align: center;
     }
 
@@ -857,7 +894,7 @@
         width: 80px;
     }
 
-    .cost{
+    .cost {
         line-height: 1;
         text-align: center;
     }

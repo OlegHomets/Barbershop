@@ -138,7 +138,8 @@ $(document).ready(() => {
 
     $('#number').mask('+7(999) 999-99-99');
 
-
+    var text = $(e.target).parent().siblings('.category-name').text();
+    $('#select-barber').val(text);
 
 
 });
