@@ -11,7 +11,7 @@ $(document).ready(() => {
         adaptiveHeight: true,
         responsive: [
             {
-                breakpoint: 828,
+                breakpoint: 930,
                 settings: {
                     arrows: true,
                     centerMode: true,
@@ -45,6 +45,8 @@ $(document).ready(() => {
 
     $('.online').click(() => {
         $('#reservation-container').css('display', 'flex');
+        var text = $(e.target).parent().siblings('.category-name').text();
+        $('#select-barber').val(text);
     });
 
     $('#reservation-cancel-close, #reservation-container').click((e) => {
@@ -138,8 +140,6 @@ $(document).ready(() => {
 
     $('#number').mask('+7(999) 999-99-99');
 
-    var text = $(e.target).parent().siblings('.category-name').text();
-    $('#select-barber').val(text);
 
 
 });

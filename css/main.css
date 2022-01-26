@@ -457,7 +457,7 @@ body {
 }
 
 #masters {
-    margin: 100px auto;
+    margin: 70px auto;
     max-width: 1170px;
     border-right: 1px solid rgb(174, 137, 89);
 }
@@ -562,14 +562,12 @@ body {
     filter: grayscale(0);
     transition-timing-function: ease;
     transition-duration: 1.3s;
+    position: relative;
+    z-index: 1;
 }
 
 .slick-center img {
     transform: scale(1.2);
-}
-
-.slick-active {
-    z-index: -1;
 }
 
 #masters-category .slick-prev:before {
@@ -617,8 +615,8 @@ body {
 #masters-category .slick-dots li button:before {
     top: 8px;
     left: 8px;
-    width: 15px;
-    height: 15px;
+    width: 14px;
+    height: 14px;
     content: '';
     opacity: 0;
     background: rgb(174, 137, 89);
