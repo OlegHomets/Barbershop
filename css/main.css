@@ -477,9 +477,9 @@ body {
 }
 
 #masters-category {
-    width: 85%;
-    height: 80%;
+    width: 1000px;
     margin: 40px auto 0 auto;
+    max-width: 100%;
 }
 
 #masters-category .barber-image {

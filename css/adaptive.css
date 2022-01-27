@@ -46,12 +46,6 @@
         bottom: -224px;
     }
 
-    #masters-category {
-        width: 100%;
-        height: 80%;
-        margin: 40px auto 0 auto;
-    }
-
     #place-container #map {
         max-width: 775px;
     }
@@ -257,7 +251,7 @@
         transform: none;
     }
 
-    .slick-center{
+    .slick-center {
         transform: none;
     }
 
@@ -589,7 +583,7 @@
         position: absolute;
         top: 30px;
         left: 20px;
-        font-size: 25px;
+        font-size: 40px;
     }
 
     #menu a {

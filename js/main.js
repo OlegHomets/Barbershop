@@ -43,9 +43,10 @@ $(document).ready(() => {
         $('#first-text').hide();
     });
 
+
+    var text = $(e.target).parent().siblings('.category-name').text();
     $('.online').click(() => {
         $('#reservation-container').css('display', 'flex');
-        var text = $(e.target).parent().siblings('.category-name').text();
         $('#select-barber').val(text);
     });
 
