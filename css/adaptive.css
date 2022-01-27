@@ -786,9 +786,18 @@
         margin-right: 10px;
     }
 
-    .cost {
+    #price .cost {
         line-height: 1;
-        text-align: center;
+        text-align: left;
+    }
+
+    .price-main-text .price-main-text-service {
+        max-width: 188px;
+        margin-top: 5px;
+    }
+
+    .cut {
+        font-size: 16px;
     }
 
     #masters {

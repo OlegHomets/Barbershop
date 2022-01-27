@@ -44,11 +44,16 @@ $(document).ready(() => {
     });
 
 
-    var text = $(e.target).parent().siblings('.category-name').text();
     $('.online').click(() => {
         $('#reservation-container').css('display', 'flex');
-        $('#select-barber').val(text);
+        // var text = $(e.target).parent().siblings('.category-name').text();
+        // $(".category-name option[value = '" + text + "']").attr('selected', 'selected');
+        var text = document.getElementsByClassName('category-name').value = document.getElementById('select-barber').options[document.getElementById('select-barber').selectedIndex].text;
+        // $('#select-barber').val();
     });
+
+
+
 
     $('#reservation-cancel-close, #reservation-container').click((e) => {
         if (e.target.id === 'reservation-container' || e.target.id === 'reservation-cancel-close') {
