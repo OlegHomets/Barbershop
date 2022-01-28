@@ -723,9 +723,15 @@
     }
 }
 
+@media screen and (max-width: 412px) {
+    #main #main-image img {
+        top: 281px;
+    }
+}
+
 @media screen and (max-width: 410px) {
     #main #main-image img {
-        top: 297px;
+        top: 319px;
     }
 }
 
@@ -767,6 +773,11 @@
     #header #burger {
         margin-right: 10px;
     }
+
+    #main #main-info #main-text {
+        margin: 25px 10px 0 30px;
+    }
+
 
     #main #main-info .main-name {
         font-size: 60px;
