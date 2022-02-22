@@ -820,7 +820,8 @@
     }
 
     #masters-category .slick-next, .slick-prev {
-        top: 425px;
+        top: 435px;
+        height: 30px;
     }
 
     #masters-category .slick-next {

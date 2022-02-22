@@ -45,7 +45,7 @@ $(document).ready(() => {
 
     $('.online').click((e) => {
         $('#reservation-container').css('display', 'flex');
-        let text = $(e.target).parent().siblings('.category-name').text();
+        let text = $(e.target).parent() .siblings('.category-name').text();
         $('#select-barber').val(text);
     });
 
